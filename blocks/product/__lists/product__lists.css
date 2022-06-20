@@ -1,0 +1,15 @@
+.product__lists {
+  padding: 0;
+  padding-top: 24px;
+  border-top: 0.5px solid #C4C4C4;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product__list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

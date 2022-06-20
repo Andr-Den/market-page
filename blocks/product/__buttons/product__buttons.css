@@ -1,0 +1,63 @@
+.product__buttons {
+  margin-top: 40px;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 4px;
+}
+
+.product__button {
+  border: none;
+  padding: 12px 28px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+}
+
+.product__black-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.product__button:hover {
+  cursor: pointer;
+}
+
+.product__button_like {
+  padding: 14px 14px;
+}
+
+.product__counter {
+  display: flex;
+  gap: 40px;
+  margin-right: 8px;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #F2F2F2;
+}
+
+.counter__button {
+  border: none;
+  background-color: #F2F2F2;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+}
+
+.counter__button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 686px){
+  .product__buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .product__counter {
+    width: 145px;
+  }
+}

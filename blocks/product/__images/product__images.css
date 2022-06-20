@@ -1,0 +1,34 @@
+.product__images {
+  width: 100%;
+  max-width: 686px;
+  height: 878px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-image: url(../../../images/illustration1.png);
+}
+
+.small-images {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.small-image {
+  width: 70px;
+  height: 91px;
+}
+
+@media screen and (max-width: 686px){
+  .product__images {
+    width: 100%;
+    max-width: 375px;
+    height: 480px;
+  }
+
+  .small-image {
+    width: 40px;
+    height: 52px;
+  }
+}

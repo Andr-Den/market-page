@@ -1,0 +1,42 @@
+.price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+.old-price {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  text-decoration-line: line-through;
+  color: #828282;
+}
+
+.product__price {
+  margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product__price-price {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.product__price-sales {
+  display: flex;
+  gap: 9px;
+}
+
+.product__sale {
+  padding: 4px 8px;
+  border: 1px solid #333333;
+  display: flex;
+  align-self: center;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}

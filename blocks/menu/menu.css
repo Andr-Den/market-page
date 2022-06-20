@@ -1,0 +1,42 @@
+.drop-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 277px;
+  background-color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+}
+.drop-menu:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu {
+  width: 345px;
+  margin: 0;
+  padding-left: 30px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.menu__header {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
+
+.menu__close {
+  align-self: flex-end;
+  margin: 25px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: #303030;
+  width: 15px;
+  height: 15px;
+}
