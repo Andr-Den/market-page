@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Страница</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__box">
+          <img src="./images/LOGO.svg">
+          <div class="header__icons">
+            <img src="./images/person.svg" class="header__icon">
+            <img src="./images/favorite.svg"  class="header__icon">
+            <img src="./images/bag.svg" class="header__icon">
+            <a href="#drop"><img src="./images/menu.svg" class="header__icon header__menu"></a>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <section class="product">
+          <div class="product__images">
+            <div class="small-images">
+              <img src="./images/illustration1.png" class="small-image">
+              <img src="./images/illustration2.png" class="small-image">
+              <img src="./images/illustration1.png" class="small-image">
+              <img src="./images/illustration2.png" class="small-image">
+              <img src="./images/illustration1.png" class="small-image">
+            </div>
+          </div>
+          <div class="product__description">
+            <h1 class="product__heading">Пижама для девочек</h1>
+            <span class="product__number">Арт. 02765/46</span>
+            <div class="product__rating">
+              <span class="product__rating-review">Отзывы</span>
+              <img src="./images/rate.svg">
+              <span>14 отзывов</span>
+              <img src="./images/arrow-right.svg">
+            </div>
+            <div class="product__price">
+              <div class="product__price-price">
+                <span class="price">800 ₽</span>
+                <span class="old-price">1 500 ₽</span>
+                <img src="./images/arrow-right.svg">
+              </div>
+              <div class="product__price-sales">
+                <span class="product__sale">скидка -36%</span>
+                <span class="product__sale">акция -20%</span>
+              </div>
+            </div>
+            <select class="product__selector">
+              <option>Выбрать размер</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+            <a href="#" class="product__link">Определить размер</a>
+            <div class="product__buttons">
+              <div class="product__counter" id="counter">
+                  <input type="button" id="buttonCountPlus" value="+" class="counter__button">
+                  <div id="buttonCountNumber">1</div>
+                  <input type="button" id="buttonCountMinus" value="-" class="counter__button">
+              </div>
+              <button class="product__button">Добавить в корзину</button>
+              <button class="product__button product__button_like">
+                <img src="./images/like.svg">
+              </button>
+            </div>
+            <a href="#popup" class="product__link">Купить в 1 клик</a>
+            <ul class="product__lists">
+              <li class="product__list">
+                <img src="./images/closes.svg">
+                <a href="#" class="product__link">Описание товара</a>
+              </li>
+              <li class="product__list">
+                <img src="./images/clock.svg">
+                <a href="#" class="product__link">Доставка и возврат</a>
+              </li>
+              <li class="product__list">
+                <img  src="./images/pay.svg">
+                <a href="#" class="product__link">Способы оплаты</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__lists">
+          <div>
+            <p class="footer__heading">ПОКУПАТЕЛЯМ</p>
+            <ul class="footer__list">
+              <li>Каталог</li>
+              <li>Акции</li>
+              <li>Бренды</li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer__heading">О НАС</p>
+            <ul class="footer__list">
+              <li>О компании</li>
+              <li>Новости</li>
+              <li>Команда</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="footer__heading">УЗНАЙТЕ ПЕРВЫМИ О НОВИНКАХ И АКЦИЯХ</p>
+          <form class="footer__form">
+            <fieldset class="footer__set">
+              <input type="text" placeholder="Адрес электронной почты" class="footer__input">
+              <input type="submit" class="footer__submit-button" value="Подписаться" name="submit_button">
+            </fieldset> 
+          </form>
+        </div>
+      </footer>
+      <div id="drop" class="drop-menu">
+        <div class="menu">
+          <a class="menu__close" href="#"><img src="./images/close-black.svg"></a>
+          <span class="menu__header">ПОСТЕЛЬНОЕ БЕЛЬЕ</span>
+          <span class="menu__header">ОДЕЖДА ДЛЯ ДОМА</span>
+          <span class="menu__header">ОДЕЖДА ДЛЯ УЛИЦЫ</span>
+          <span class="menu__header">ВЫХОД</span>
+        </div>
+      </div>
+      <div id="popup" class="overlay">
+        <div class="popup">
+          <a class="popup__close" href="#">&times;</a>
+          <h2 class="popup__header">Купить в 1 клик</h2>
+          <form class="popup__form">
+            <fieldset class="popup__set">
+              <input type="tel" placeholder="+7(---) --- -- -- " class="popup__input">
+              <input type="text" placeholder="Ваше имя" class="popup__input">
+              <span class="popup__text">Нажимая кнопку “Отправить”, я даю согласие на обработку моих персональных данных в соответствии с 
+                <a href="#">Условиями конфиденциальности</a></span>
+              <input type="submit" class="popup__submit-button" value="Отправить" name="submit_button">
+            </fieldset> 
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/counter.js"></script>
+  </body>
+</html>
